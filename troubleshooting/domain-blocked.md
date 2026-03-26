@@ -27,7 +27,7 @@
 > 💡 **註**：土耳其地區 (如客戶 LuckyStreak) 最常發生此類封鎖。
 * **操作路徑**：`BO` > `System` > `Endpoint`
 * **設定對象**：選擇對應 Reseller (例如: **LuckyStreak**) > `KingMidas`
-* **修改位置**：``KingMidas World` & `Kaiun World` -> **`Endpoint`**
+* **修改位置**：`KingMidas World` & `Kaiun World` -> **`Endpoint`**
 
 ### 方案 D：單一 Brand 客戶封鎖
 * **操作路徑**：`BO` > `Licensee` > `Brand` > `搜尋特定 Brand` > `Edit Brand` > `Providers` > `KingMidas`
