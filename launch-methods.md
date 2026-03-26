@@ -40,7 +40,7 @@
 ### 📥 範例回傳 (JSON Response)
 ```json
 {
-  "url": "[https://lobby.aggqmsea.net/gamelauncher?token=TiFkFy...&code=S01RTT...&homeurl=https%3a%2f%2f](https://lobby.aggqmsea.net/gamelauncher?token=TiFkFy...&code=S01RTT...&homeurl=https%3a%2f%2f)..."
+  "url": "https://lobby.aggqmsea.net/gamelauncher?token=TiFkFy...&code=S01RTT...&homeurl=https%3a%2f%2f](https://lobby.aggqmsea.net/gamelauncher?token=TiFkFy...&code=S01RTT...&homeurl=https%3a%2f%2f..."
 }
 ```
 ---
