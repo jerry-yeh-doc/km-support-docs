@@ -12,11 +12,11 @@
 | *斜體 (Italic)* | `<i>`, `<em>` | `<i>斜體文字</i>` |
 | <u>底線 (Underline)</u> | `<u>`, `<ins>` | `<u>底線文字</u>` |
 | ~~刪除線 (Strike)~~ | `<s>`, `<strike>`, `<del>` | `<s>刪除線文字</s>` |
-| 🌫️ **隱藏內容 (Spoiler)** | `<tg-spoiler>` | `<tg-spoiler>點擊顯示內容</tg-spoiler>` |
-| 🔗 **內嵌連結 (URL)** | `<a href="...">` | `<a href="https://docs.j-yeh.com">點此查看文檔</a>` |
-| 👤 **提及用戶 (Mention)** | `<a href="tg://user?id=...">` | `<a href="tg://user?id=123456789">聯絡工程師</a>` |
+| **隱藏內容 (Spoiler)** | `<tg-spoiler>` | `<tg-spoiler>點擊顯示內容</tg-spoiler>` |
+| **內嵌連結 (URL)** | `<a href="...">` | `<a href="https://docs.j-yeh.com">點此查看文檔</a>` |
+| **提及用戶 (Mention)** | `<a href="tg://user?id=...">` | `<a href="tg://user?id=123456789">聯絡工程師</a>` |
 | `行內代碼 (Inline)` | `<code>` | `<code>/api/v2/launcher</code>` |
-| 👾 **自定義 Emoji** | `<tg-emoji>` | `<tg-emoji emoji-id="5368324170">📌</tg-emoji>` |
+| **自定義 Emoji** | `<tg-emoji>` | `<tg-emoji emoji-id="5368324170">📌</tg-emoji>` |
 
 ---
 
