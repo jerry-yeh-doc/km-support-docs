@@ -8,6 +8,7 @@
 * **Reverse支援**
   * [Reverse 說明](reverse/readme.md)
   * [GoldenRace](reverse/goldenrace.md)
+  * [LuckyStreak](reverse/luckystreak.md)
 
 * **故障排除**
   * [域名封鎖處理](troubleshooting/domain-blocked.md)

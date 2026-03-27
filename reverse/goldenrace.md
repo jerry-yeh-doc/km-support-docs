@@ -29,11 +29,52 @@
 
 ## 3. API 路由與規範 (SW API)
 
-### 🩺 基礎連通性
+### 基礎連通性
 * **`/api/health-check`** : 確保 SW 伺服器運作狀態。
-* **`/api/games`** : 獲取完整遊戲列表以同步至客戶端。
+* **`/api/games`** : Push 遊戲資訊以同步至客戶端。
+	範例
+```json
+{
+    "games": [
+        {
+            "game_id": "Sugar_Blast_Frenzy",
+            "name": "Sugar Blast Frenzy",
+            "description": "Sugar Blast is a slot reel-style game. Eliminate candy symbols to get a winning combination.The more winning combinations achieved, the higher the winnings! You can choose to fire up to 3 cannon bombs to start the game.",
+            "type": 0,
+            "thumbnail": "https://cdn-static.queenmakergames.co/game/en-US/Game_KMQM_Sugar_Blast_Frenzy_343x200.jpg",
+            "platform": 2,
+            "version": "v.2.3.101",
+            "release_date": "2024-05-28 07:00:00",
+            "free_bet_support": true,
+            "in_game_free_bets": true,
+            "volatility": "High",
+            "rtp": 96.98,
+            "pay_lines": 0,
+            "hit_ratio": 28.17,
+            "bonus_buy": true
+        },
+        {
+            "game_id": "Chicken_Crossy",
+            "name": "Chicken Crossy",
+            "description": "Get ready for high-stakes fun in Chicken Crossy! Guide your daring chicken through lanes of speeding traffic, collecting multipliers with every step. The further you go, the bigger the rewards! Cash out anytime to secure your wins or push your luck for the ultimate prize with payouts of over 3,000,000X! Cross to Win!",
+            "type": 19,
+            "thumbnail": "https://cdn-static.queenmakergames.co/game/en-US/Game_KMQM_Chicken_Crossy_343x200.jpg",
+            "platform": 2,
+            "version": "v2.3.41",
+            "release_date": "2025-07-15 07:00:00",
+            "free_bet_support": false,
+            "in_game_free_bets": false,
+            "volatility": "High",
+            "rtp": 95.99,
+            "pay_lines": 0,
+            "hit_ratio": 0.0,
+            "bonus_buy": false
+        }
+    ]
+}
+```
 
-### 💰 錢包交易 (Wallet API)
+### 錢包交易 (Wallet API)
 > **Endpoint Base:** `/api/wallet/`
 
 核心路由包含：`authenticate` / `balance` / `debit` / `credit` / `rollback` / `status` / `terminate`
@@ -51,13 +92,13 @@
 
 ---
 
-## 5. QM 品牌設定 (Brand Setup)
+## QM 品牌設定 (Brand Setup)
 
 * **品牌代碼識別 (Prefix/Brand Code)**:
 	在我方建立Brand會使用 `Prefix`+`operator_id`
     * `Prefix`: `GoldenRace-`。
     * `operator_id`: 營運商 ID。
-    * `site_id`: 我方建立玩家userid的前綴代碼 (Player's Prefix)。
+    * `site_id`: 我方建立玩家userid會使用 `site_id` 作為前綴代碼。
 
 若有新營運商 (New Operators)，我方需建立品牌，並請客戶提供以下資訊：
 
@@ -74,7 +115,7 @@
 
 ---
 
-## 📝 6. 合約說明 (Resellers)
+## 6. 合約說明 (Resellers)
 
 目前共有 3 個不同的合約對應不同的Reseller：
 * **GoldenRace**
