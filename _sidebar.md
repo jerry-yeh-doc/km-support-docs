@@ -2,8 +2,8 @@
 * **客戶支援**
   * [最新文檔](clientsupport/latestdocs.md)
   * [遊戲開啟方法](clientsupport/launch-methods.md)
-  * [關線流程](clientsupport/closeline.md)
-  * [Bot HTML語法指南](clientsupport/announce-html-guide.md)
+  * [客戶關線流程](clientsupport/closeline.md)
+  * [Bot - HTML語法指南](clientsupport/announce-html-guide.md)
 
 * **Reverse支援**
   * [Reverse 說明](reverse/readme.md)
