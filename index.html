@@ -18,7 +18,11 @@
   <script>
     // 初始化 Mermaid 配置
     var num = 0;
-    mermaid.initialize({ startOnLoad: false });
+    mermaid.initialize({ 
+	  startOnLoad: false,
+	  theme: 'forest',      // <--- 在這裡加入主題
+	  securityLevel: 'loose' // 建議加入，增加圖表渲染的相容性
+	});
 
     window.$docsify = {
       name: 'KM 技術支援中心',
