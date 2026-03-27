@@ -40,7 +40,6 @@
 
 假設原本設置是：
 `https://support.qm7.`**`input04node.net`**`/api/kingmakerqm/`
-
 更換域名時，僅需替換 Main Domain。例如備用域名是 inode03hub.net，則設置為：
 `https://support.qm7.`**`inode03hub.net`**`/api/kingmakerqm/`
 
@@ -53,13 +52,12 @@
 * **修改位置**：`KingMidas World` -> **`Game Provider Endpoint`**
 * **重要**：Desktop 與 Mobile 兩個欄位皆須同步更改。
 * **範例**：
-```
-假設原本設置是 
-https://support.qm7.input04node.net/api/kingmakerqm/
-更換域名，改main domain就好，例如備用domain是inode03hub.net
-就設置成以下
-https://support.qm7.inode03hub.net/api/kingmakerqm/
-```
+
+假設原本設置是：
+`https://support.qm7.`**`input04node.net`**`/api/kingmakerqm/`
+更換域名時，僅需替換 Main Domain。例如備用域名是 inode03hub.net，則設置為：
+`https://support.qm7.`**`inode03hub.net`**`/api/kingmakerqm/`
+
 * **備用 Domain**：
     `待更新`
 
