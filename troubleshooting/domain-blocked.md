@@ -37,13 +37,14 @@
 * **設定對象**：選擇對應 Reseller (例如: **LuckyStreak**) > `KingMidas`
 * **修改位置**：`KingMidas World` & `Kaiun World` -> **`Endpoint`**
 * **範例**：
-```
-假設原本設置是 
-https://support.qm7.input04node.net/api/kingmakerqm/
-更換域名，改main domain就好，例如備用domain是inode03hub.net
-就設置成以下
-https://support.qm7.inode03hub.net/api/kingmakerqm/
-```
+
+假設原本設置是：
+`https://support.qm7.`**`input04node.net`**`/api/kingmakerqm/`
+
+更換域名時，僅需替換 Main Domain。例如備用域名是 inode03hub.net，則設置為：
+`https://support.qm7.`**`inode03hub.net`**`/api/kingmakerqm/`
+
+
 * **備用 Domain**：
     `待更新`
 
