@@ -54,9 +54,10 @@
 ## 5. QM 品牌設定 (Brand Setup)
 
 * **品牌代碼識別 (Prefix/Brand Code)**:
+	在我方建立Brand會使用 `Prefix`+`operator_id`
     * `Prefix`: `GoldenRace-`。
     * `operator_id`: 營運商 ID。
-    * `site_id`: 玩家的前綴代碼 (Player's Prefix)。
+    * `site_id`: 我方建立玩家userid的前綴代碼 (Player's Prefix)。
 
 若有新營運商 (New Operators)，我方需建立品牌，並請客戶提供以下資訊：
 
