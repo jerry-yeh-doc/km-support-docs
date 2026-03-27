@@ -32,7 +32,7 @@
 ### 基礎連通性
 * **`/api/health-check`** : 確保 SW 伺服器運作狀態。
 * **`/api/games`** : Push 遊戲資訊以同步至客戶端。
-	範例
+> 範例如下：
 ```json
 {
     "games": [
