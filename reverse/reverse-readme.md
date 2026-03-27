@@ -12,11 +12,11 @@ graph LR
 ```
 
 
-* ** Reverse客戶API流程** :
+* **Reverse客戶API流程** :
 ```mermaid
 graph LR
     A[KM Game server] <--> B[QM API server]
-    B -- C[QM Proxy server]
+    B <--> C[QM Proxy server]
 	C <--> D[Reverse Client server]
 ```
     * **`QM Proxy server`**: 
