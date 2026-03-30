@@ -20,7 +20,7 @@
 ### 方案 A：舊版開啟方法域名封鎖
 * **判定條件**：確認域名於該國家 IP 無法開啟。
 * **處理動作**：請客戶端工程師將程式碼中的域名更換為最新的 **備用 Domain**。
-* **備用 Domain**：
+* **最新備用 Domain**：
     * `lobby.qmgames.co`
     * `lobby.qmgames.info`
     * `lobby.maesq.net`
@@ -30,7 +30,7 @@
 * **操作路徑**：`BO` > `System` > `Endpoint`
 * **設定對象**：選擇對應 Reseller (例如: **LuckyStreak**) > `KingMidas`
 * **修改位置**：`KingMidas World` & `Kaiun World` -> **`Aggregator Endpoint`**
-* **備用 Domain**：
+* **最新備用 Domain**：
     * `https://lobby.qmseaagg.net`
 
 ### 方案 C：遊戲商域名封鎖 (高頻)
@@ -40,7 +40,7 @@
 * **範例說明**：
     * 原設置：`https://support.qm7.`**`input04node.net`**`/api/kingmakerqm/`
     * 更換後：`https://support.qm7.`**`inode03hub.net`**`/api/kingmakerqm/`
-* **備用 Domain**：`jhub01.net`
+* **最新備用 Domain**：`jhub01.net`
 
 > [!NOTE]
 > 土耳其地區 (如客戶 LuckyStreak) 最常發生此類封鎖。
@@ -51,7 +51,7 @@
 * **範例說明**：
     * 原設置：`https://support.qm7.`**`input04node.net`**`/api/kingmakerqm/`
     * 更換後：`https://support.qm7.`**`inode03hub.net`**`/api/kingmakerqm/`
-* **備用 Domain**：`jhub01.net`
+* **最新備用 Domain**：`jhub01.net`
 
 ---
 *最後更新日期：2026-03-30*
