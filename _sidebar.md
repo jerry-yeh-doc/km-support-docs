@@ -4,6 +4,9 @@
   * [遊戲開啟方法](clientsupport/launch-methods.md)
   * [客戶關線流程](clientsupport/closeline.md)
   * [Bot - HTML語法指南](clientsupport/announce-html-guide.md)
+  
+* **故障排除**
+  * [域名封鎖處理](troubleshooting/domain-blocked.md)
 
 * **Reverse客戶支援**
   * [Reverse 說明](reverse/reverse-readme.md)
@@ -20,7 +23,3 @@
   * [Platipus](reverse/tbu.md)
   * [Groove](reverse/tbu.md)
   * [Vivat](reverse/tbu.md)
-  
-
-* **故障排除**
-  * [域名封鎖處理](troubleshooting/domain-blocked.md)
