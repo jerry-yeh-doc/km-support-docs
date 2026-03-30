@@ -10,29 +10,28 @@
 <body>
   <div id="app">載入中...</div>
 
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  
-  <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-
   <script>
-    // 初始化 Mermaid 配置
+    // 1. 初始化 Mermaid 配置 (放在最前面)
     var num = 0;
-    mermaid.initialize({ 
-	  startOnLoad: false,
-	  theme: 'forest',      // <--- 在這裡加入主題
-	  securityLevel: 'loose' // 建議加入，增加圖表渲染的相容性
-	});
 
+    // 2. Docsify 完整配置
     window.$docsify = {
       name: 'KM 技術支援中心',
       repo: 'jerry-yeh-doc/km-support-docs',
       loadSidebar: true,
       subMaxLevel: 2,
       auto2top: true,
-      search: 'auto',
       
-      // 核心修復：Mermaid 渲染邏輯
+      // 優化搜尋配置
+      search: {
+        maxAge: 86400000, // 過期時間，單位毫秒
+        paths: 'auto',
+        placeholder: '搜尋文件...',
+        noData: '找不到結果',
+        depth: 6
+      },
+
+      // Mermaid 渲染邏輯
       markdown: {
         renderer: {
           code: function(code, lang) {
@@ -44,17 +43,34 @@
             return this.origin.code.apply(this, arguments);
           }
         }
-      }
-    };
+      },
 
-    // 針對 Docsify 的 Mermaid 自動渲染腳本
-    window.$docsify.plugins = [
-      function(hook, vm) {
-        hook.doneEach(function() {
-          mermaid.init(undefined, '.mermaid');
-        });
-      }
-    ].concat(window.$docsify.plugins || []);
+      // 插件邏輯：Mermaid 渲染
+      plugins: [
+        function(hook, vm) {
+          hook.doneEach(function() {
+            if (window.mermaid) {
+              mermaid.init(undefined, '.mermaid');
+            }
+          });
+        }
+      ]
+    };
+  </script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+  <script>
+    // 啟動 Mermaid
+    if (window.mermaid) {
+      mermaid.initialize({ 
+        startOnLoad: false,
+        theme: 'forest',
+        securityLevel: 'loose'
+      });
+    }
   </script>
 </body>
 </html>
