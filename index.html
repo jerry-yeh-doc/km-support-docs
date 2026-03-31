@@ -6,52 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <style>
+    .docsify-copy-code-button { background: #5b21b6 !important; color: #fff !important; }
+    /* 你可以自定義按鈕顏色來搭配你的 Forest 主題 */
+    :root {
+      --docsify_back_to_top_button_bg_color: #5b21b6;
+    }
+  </style>
 </head>
 <body>
   <div id="app">載入中...</div>
 
   <script>
-    // 1. 初始化 Mermaid 配置 (放在最前面)
-    var num = 0;
-
-    // 2. Docsify 完整配置
     window.$docsify = {
       name: 'KM 技術支援中心',
       repo: 'jerry-yeh-doc/km-support-docs',
       loadSidebar: true,
-	  subMaxLevel: 3,    // 這裡要調高到 3，才能抓到第三層的客戶名單
-      auto2top: true,
+      subMaxLevel: 3,
+      auto2top: true, // 這行確保換頁時自動回到頂部
+      search: 'auto',
       
-      // 優化搜尋配置
-      search: {
-        maxAge: 86400000, // 過期時間，單位毫秒
-        paths: 'auto',
-        placeholder: '搜尋文件...',
-        noData: '找不到結果',
-        depth: 6
+      // 返回頂部按鈕設定
+      backToTop: {
+        size: '30px',           // 按鈕大小
+        bottom: '30px',         // 距離底部距離
+        right: '30px',          // 距離右側距離
+        clickableOffset: 500,   // 捲動超過 500px 才顯示按鈕
+        content: '▲'            // 按鈕顯示內容 (也可以用 Emoji 🚀)
       },
 
-      // Mermaid 渲染邏輯
       markdown: {
         renderer: {
           code: function(code, lang) {
             if (lang === "mermaid") {
-              return (
-                '<div class="mermaid">' + code + '</div>'
-              );
+              return '<div class="mermaid">' + code + '</div>';
             }
             return this.origin.code.apply(this, arguments);
           }
         }
       },
-
-      // 插件邏輯：Mermaid 渲染
       plugins: [
         function(hook, vm) {
           hook.doneEach(function() {
-            if (window.mermaid) {
-              mermaid.init(undefined, '.mermaid');
-            }
+            if (window.mermaid) { mermaid.init(undefined, '.mermaid'); }
           });
         }
       ]
@@ -61,16 +59,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/docsify-back-to-top@1.0.0/dist/docsify-back-to-top.min.js"></script>
 
-  <script>
-    // 啟動 Mermaid
-    if (window.mermaid) {
-      mermaid.initialize({ 
-        startOnLoad: false,
-        theme: 'forest',
-        securityLevel: 'loose'
-      });
-    }
-  </script>
 </body>
 </html>
