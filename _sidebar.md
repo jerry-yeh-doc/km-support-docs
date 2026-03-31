@@ -10,7 +10,7 @@
 
 * **Reverse 客戶支援**
   * [Reverse 說明](reverse/reverse-readme.md)
-  * [Reverse 客戶清單](reverse/reverse-readme.md)
+  * [Reverse 客戶清單](reverse/reverse-client-list.md)
     * [GoldenRace](reverse/goldenrace.md)
     * [LuckyStreak](reverse/luckystreak.md)
     * [GameKong](reverse/gamekong.md)
