@@ -14,7 +14,7 @@
     * [GoldenRace](reverse/goldenrace.md)
     * [LuckyStreak](reverse/luckystreak.md)
     * [GameKong](reverse/gamekong.md)
-    * [Pin-Up](reverse/tbu.md)
+    * [Pin-Up](reverse/pin-up.md)
     * [BingoPlus](reverse/tbu.md)
     * [CasinoPlus](reverse/tbu.md)
     * [OneWin](reverse/tbu.md)
