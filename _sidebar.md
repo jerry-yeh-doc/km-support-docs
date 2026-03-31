@@ -15,7 +15,7 @@
     * [LuckyStreak](reverse/luckystreak.md)
     * [GameKong](reverse/gamekong.md)
     * [Pin-Up](reverse/pin-up.md)
-    * [BingoPlus](reverse/tbu.md)
+    * [BingoPlus](reverse/bingoplus.md)
     * [CasinoPlus](reverse/tbu.md)
     * [OneWin](reverse/tbu.md)
     * [Spinoro](reverse/tbu.md)
