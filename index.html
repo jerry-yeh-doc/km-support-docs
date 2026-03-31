@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   
   <style>
-    /* 強制確保按鈕在最上層，避免被其他元件遮住 */
-    .docsify-back-to-top {
-      z-index: 9999 !important;
-      cursor: pointer !important;
-      opacity: 1 !important;
+    .docsify-copy-code-button { background: #5b21b6 !important; color: #fff !important; }
+    /* 你可以自定義按鈕顏色來搭配你的 Forest 主題 */
+    :root {
+      --docsify_back_to_top_button_bg_color: #5b21b6;
     }
   </style>
 </head>
