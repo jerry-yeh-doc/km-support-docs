@@ -106,5 +106,5 @@ Payout/Jackpot - the payout posting time (when our server posted the win)
 * **Pinco**
 
 ---
-最後更新：2026-03-31
+最後更新：2026-03-31  
 維護者：Jerry Yeh
