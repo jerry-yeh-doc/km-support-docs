@@ -32,10 +32,8 @@
 ### 基礎連通性
 * **`/api/health-check`** : 確保 SW 伺服器運作狀態。
 * **`/api/games`** : Push 遊戲資訊以同步至客戶端。  
-  *註: 只要有新遊戲，都需要推送此API給客戶。(API參數請參考客戶的API文檔)*
-  | 項目 | 網址 | 備註 |
-  | :--- | :--- | :--- |
-  | **API文檔** | https://reverse-docs.xpress.tech/) | `User: xpress`<br>`PW: xpressgivemewin` |
+  *註: 只要有新遊戲，都需要推送此API給客戶。(API參數請參考客戶的API文檔)*  
+  *https://reverse-docs.xpress.tech  `User: xpress``PW: xpressgivemewin`*
   
 > 範例如下：
 ```json
